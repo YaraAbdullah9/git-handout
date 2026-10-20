@@ -155,6 +155,26 @@ Git ist ein Werkzeug zur Versionsverwaltung.
 - Zwischen `<<<<<<< HEAD` und `=======` steht die Version des aktuellen Branches.
 - Zwischen `=======` und `>>>>>>>` steht die Version des Branches, der hineingemergt wird.
 
+### Konflikt lösen
+
+1. `git status` zeigt die betroffenen Dateien.
+2. Datei öffnen, die gewünschte Version behalten (oder beide kombinieren) und **alle Markierungen entfernen**.
+3. Gelöste Datei vormerken und Merge abschließen:
+
+```bash
+git add README.md
+git commit -m "Merge-Konflikt in Einleitung gelöst"
+```
+
+Falls man den Merge abbrechen möchte: `git merge --abort`
+
+### Konflikte vermeiden
+
+- Vor dem Arbeiten immer `git pull` auf `main` ausführen.
+- Kleine, häufige Commits statt großer Änderungen.
+- Im Team absprechen, wer welche Datei bzw. welchen Abschnitt bearbeitet.
+- Den eigenen Branch regelmäßig mit `main` aktualisieren: `git merge main`
+
 ---
 
 ## 4. Git mit IntelliJ/PyCharm
