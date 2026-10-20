@@ -238,6 +238,20 @@ Mit verbundenem GitHub-Konto gibt es das Tool-Window **Pull Requests**, in dem m
 | **GitLab** | Merge Requests, starke integrierte CI/CD-Pipelines, auch selbst hostbar |
 | **Bitbucket** | Gute Integration mit Jira und anderen Atlassian-Tools |
 
+### Pull Requests auf GitHub
+
+1. Branch pushen → GitHub zeigt **Compare & pull request** an.
+2. Base-Branch (`main`) und Compare-Branch (`feature/x`) prüfen, Titel und Beschreibung schreiben, Reviewer:innen auswählen.
+3. Reviewer:innen prüfen unter **Files changed** die Änderungen, kommentieren einzelne Zeilen und wählen unter **Review changes** → *Comment*, *Approve* oder *Request changes*.
+4. Nach der Freigabe: **Merge pull request** → Branch löschen.
+
+### Grafische Git-Clients
+
+- **GitHub Desktop:** einfach, ideal für den Einstieg
+- **Sourcetree:** kostenlos, übersichtliche Darstellung der Branches
+- **GitKraken:** sehr anschauliche Visualisierung (für Studierende teils kostenlos)
+- **VS Code:** eingebaute Git-Unterstützung, erweiterbar mit „GitLens“
+
 ---
 
 ## 6. Entstehung und Beiträge
