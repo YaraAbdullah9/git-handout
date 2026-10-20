@@ -134,6 +134,27 @@ feature/x:         C───D───
 | `git push -u origin feature/x` | Branch erstmals hochladen und mit Remote verknüpfen |
 | `git branch -d feature/x` | Branch nach dem Merge löschen |
 
+### Namenskonventionen
+
+- `feature/<beschreibung>` für neue Inhalte, z. B. `feature/grundbefehle`
+- `fix/<beschreibung>` für Korrekturen
+- `docs/<beschreibung>` für Dokumentation
+
+### Merge-Konflikte
+
+Ein Merge-Konflikt entsteht, wenn zwei Branches **dieselbe Stelle derselben Datei** unterschiedlich geändert haben. Git kann dann nicht automatisch entscheiden, welche Version richtig ist, und markiert die Stelle:
+
+```text
+<<<<<<< HEAD
+Git ist ein verteiltes Versionskontrollsystem.
+=======
+Git ist ein Werkzeug zur Versionsverwaltung.
+>>>>>>> feature/einleitung
+```
+
+- Zwischen `<<<<<<< HEAD` und `=======` steht die Version des aktuellen Branches.
+- Zwischen `=======` und `>>>>>>>` steht die Version des Branches, der hineingemergt wird.
+
 ---
 
 ## 4. Git mit IntelliJ/PyCharm
