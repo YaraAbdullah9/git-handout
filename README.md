@@ -62,6 +62,24 @@ git config --global init.defaultBranch main
 git config --list          # Einstellungen prüfen
 ```
 
+### Die wichtigsten Befehle
+
+| Befehl | Beschreibung |
+|---|---|
+| `git init` | Neues Repository im aktuellen Ordner anlegen |
+| `git clone <URL>` | Bestehendes Remote-Repository herunterladen |
+| `git status` | Zeigt geänderte, vorgemerkte und neue Dateien |
+| `git add <datei>` | Datei für den nächsten Commit vormerken (`git add .` = alle Änderungen) |
+| `git commit -m "Nachricht"` | Vorgemerkte Änderungen als Commit speichern |
+| `git log --oneline` | Kompakte Übersicht der Commit-Historie |
+| `git diff` | Zeigt noch nicht vorgemerkte Änderungen |
+| `git push` | Lokale Commits ins Remote-Repository hochladen |
+| `git pull` | Änderungen vom Remote holen und einarbeiten (= `fetch` + `merge`) |
+| `git fetch` | Änderungen vom Remote holen, ohne sie einzuarbeiten |
+| `git restore <datei>` | Ungespeicherte Änderungen an einer Datei verwerfen |
+| `git restore --staged <datei>` | Datei aus der Staging Area entfernen (Änderung bleibt erhalten) |
+| `git revert <commit>` | Neuen Commit erstellen, der einen alten Commit rückgängig macht |
+
 ---
 
 ## 3. Branches und Merge-Konflikte
