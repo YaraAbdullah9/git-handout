@@ -53,7 +53,14 @@ Git ist ein **verteiltes Versionskontrollsystem**. Es speichert den Verlauf alle
 
 ## 2. Grundlegende Git-Befehle
 
-_Dieser Abschnitt wird noch ergänzt._
+### Einmalige Einrichtung
+
+```bash
+git config --global user.name "Vorname Nachname"
+git config --global user.email "name@example.com"
+git config --global init.defaultBranch main
+git config --list          # Einstellungen prüfen
+```
 
 ---
 
