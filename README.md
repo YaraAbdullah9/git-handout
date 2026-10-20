@@ -15,7 +15,9 @@ Dieses Handout erklärt die wichtigsten Grundlagen von Git: was Git ist, welche 
 
 ## 1. Was ist Git und warum sollte man es verwenden?
 
-_Dieser Abschnitt wird noch ergänzt._
+Git ist ein **verteiltes Versionskontrollsystem**. Es speichert den Verlauf aller Änderungen an Dateien eines Projekts, sodass man jederzeit nachvollziehen kann, wer wann was geändert hat, und bei Bedarf zu früheren Ständen zurückkehren kann. Git wurde 2005 von Linus Torvalds für die Entwicklung des Linux-Kernels entwickelt und ist heute der Standard in der Softwareentwicklung.
+
+„Verteilt“ bedeutet: Jede Person hat eine vollständige Kopie des Repositorys inklusive der gesamten Historie auf ihrem Rechner. Man kann also auch offline arbeiten und committen.
 
 ---
 
