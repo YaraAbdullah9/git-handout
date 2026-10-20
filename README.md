@@ -179,7 +179,23 @@ Falls man den Merge abbrechen möchte: `git merge --abort`
 
 ## 4. Git mit IntelliJ/PyCharm
 
-_Dieser Abschnitt wird noch ergänzt._
+IntelliJ IDEA und PyCharm (beide von JetBrains) haben eine eingebaute Git-Integration. Die meisten Befehle lassen sich per Mausklick ausführen. *(Menünamen können je nach Version und „New UI“/„Classic UI“ leicht abweichen.)*
+
+### Lokales Repository
+
+**Neues Repository anlegen:**
+`VCS` → `Create Git Repository…` (bzw. `Enable Version Control Integration`) → Projektordner auswählen. Das entspricht `git init`.
+
+**Änderungen committen:**
+- Commit-Fenster öffnen: `Ctrl + K` (macOS: `Cmd + K`)
+- Dateien auswählen (entspricht `git add`), Commit-Message eingeben, auf **Commit** klicken.
+- Geänderte Dateien werden farbig markiert: **blau** = geändert, **grün** = neu, **rot** = nicht versioniert.
+
+**Historie ansehen:**
+Git-Tool-Window öffnen: `Alt + 9` (macOS: `Cmd + 9`) → Reiter **Log**. Hier sieht man alle Commits und Branches grafisch.
+
+**Branches:**
+Über das Branch-Widget (New UI: oben links neben dem Projektnamen, Classic UI: unten rechts in der Statusleiste) → `New Branch…`, Branch wechseln (`Checkout`) oder mergen (`Merge into Current`).
 
 ---
 
