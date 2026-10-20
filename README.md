@@ -113,7 +113,67 @@ __pycache__/
 
 ## 3. Branches und Merge-Konflikte
 
-_Dieser Abschnitt wird noch ergänzt._
+### Was sind Branches?
+
+Ein Branch ist eine eigene Entwicklungslinie. Der Haupt-Branch heißt meist `main` (früher `master`). Neue Features oder Änderungen entwickelt man in einem separaten Branch und führt sie erst nach Fertigstellung und Review in `main` zusammen. So bleibt `main` stabil.
+
+```
+main:        A───B───────────E (Merge)
+                  \         /
+feature/x:         C───D───
+```
+
+### Wichtige Branch-Befehle
+
+| Befehl | Beschreibung |
+|---|---|
+| `git branch` | Alle lokalen Branches anzeigen (`-a` inklusive Remote) |
+| `git switch -c feature/x` | Neuen Branch anlegen und wechseln (älter: `git checkout -b`) |
+| `git switch main` | Zu einem Branch wechseln |
+| `git merge feature/x` | Branch `feature/x` in den aktuellen Branch übernehmen |
+| `git push -u origin feature/x` | Branch erstmals hochladen und mit Remote verknüpfen |
+| `git branch -d feature/x` | Branch nach dem Merge löschen |
+
+### Namenskonventionen
+
+- `feature/<beschreibung>` für neue Inhalte, z. B. `feature/grundbefehle`
+- `fix/<beschreibung>` für Korrekturen
+- `docs/<beschreibung>` für Dokumentation
+
+### Merge-Konflikte
+
+Ein Merge-Konflikt entsteht, wenn zwei Branches **dieselbe Stelle derselben Datei** unterschiedlich geändert haben. Git kann dann nicht automatisch entscheiden, welche Version richtig ist, und markiert die Stelle:
+
+```text
+<<<<<<< HEAD
+Git ist ein verteiltes Versionskontrollsystem.
+=======
+Git ist ein Werkzeug zur Versionsverwaltung.
+>>>>>>> feature/einleitung
+```
+
+- Zwischen `<<<<<<< HEAD` und `=======` steht die Version des aktuellen Branches.
+- Zwischen `=======` und `>>>>>>>` steht die Version des Branches, der hineingemergt wird.
+
+### Konflikt lösen
+
+1. `git status` zeigt die betroffenen Dateien.
+2. Datei öffnen, die gewünschte Version behalten (oder beide kombinieren) und **alle Markierungen entfernen**.
+3. Gelöste Datei vormerken und Merge abschließen:
+
+```bash
+git add README.md
+git commit -m "Merge-Konflikt in Einleitung gelöst"
+```
+
+Falls man den Merge abbrechen möchte: `git merge --abort`
+
+### Konflikte vermeiden
+
+- Vor dem Arbeiten immer `git pull` auf `main` ausführen.
+- Kleine, häufige Commits statt großer Änderungen.
+- Im Team absprechen, wer welche Datei bzw. welchen Abschnitt bearbeitet.
+- Den eigenen Branch regelmäßig mit `main` aktualisieren: `git merge main`
 
 ---
 
