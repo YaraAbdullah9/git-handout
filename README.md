@@ -215,6 +215,17 @@ Git-Tool-Window öffnen: `Alt + 9` (macOS: `Cmd + 9`) → Reiter **Log**. Hier s
 **Projekt direkt auf GitHub veröffentlichen:**
 `Git` → `GitHub` → `Share Project on GitHub`
 
+### Merge-Konflikte in der IDE
+
+Bei einem Konflikt öffnet die IDE einen Dialog mit den betroffenen Dateien. Optionen:
+- **Accept Yours:** eigene Version übernehmen
+- **Accept Theirs:** fremde Version übernehmen
+- **Merge…:** dreigeteilte Ansicht (links eigene Version, rechts fremde Version, Mitte Ergebnis), in der man Änderungen einzeln per Pfeil übernehmen kann
+
+### Pull Requests in der IDE
+
+Mit verbundenem GitHub-Konto gibt es das Tool-Window **Pull Requests**, in dem man PRs erstellen, ansehen, kommentieren und reviewen kann, ohne den Browser zu öffnen.
+
 ---
 
 ## 5. Nützliche Git-Tools und Plattformen
