@@ -80,6 +80,35 @@ git config --list          # Einstellungen prüfen
 | `git restore --staged <datei>` | Datei aus der Staging Area entfernen (Änderung bleibt erhalten) |
 | `git revert <commit>` | Neuen Commit erstellen, der einen alten Commit rückgängig macht |
 
+### Typischer Ablauf
+
+```bash
+git clone https://github.com/team/git-handout.git
+cd git-handout
+# ... Dateien bearbeiten ...
+git status
+git add README.md
+git commit -m "Abschnitt zu Git-Grundbefehlen ergänzt"
+git push
+```
+
+### Tipps für gute Commit-Messages
+
+- Kurz und aussagekräftig (ca. 50 Zeichen), im Imperativ oder als Beschreibung: `Tabelle mit Grundbefehlen ergänzt`
+- Ein Commit = eine logische Änderung
+- Nicht: `update`, `fix`, `asdf`
+
+### Die Datei `.gitignore`
+
+In der `.gitignore` steht, welche Dateien Git ignorieren soll, z. B. IDE-Einstellungen (`.idea/`), Build-Ordner (`target/`, `build/`), virtuelle Umgebungen (`.venv/`) oder Passwörter/Konfigurationsdateien (`.env`).
+
+```gitignore
+.idea/
+__pycache__/
+.venv/
+.env
+```
+
 ---
 
 ## 3. Branches und Merge-Konflikte
