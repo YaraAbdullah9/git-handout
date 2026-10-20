@@ -197,6 +197,24 @@ Git-Tool-Window öffnen: `Alt + 9` (macOS: `Cmd + 9`) → Reiter **Log**. Hier s
 **Branches:**
 Über das Branch-Widget (New UI: oben links neben dem Projektnamen, Classic UI: unten rechts in der Statusleiste) → `New Branch…`, Branch wechseln (`Checkout`) oder mergen (`Merge into Current`).
 
+### Remote Repository
+
+**Bestehendes Repository klonen:**
+`File` → `New` → `Project from Version Control…` (oder auf dem Startbildschirm **Get from VCS**) → URL einfügen → **Clone**.
+
+**GitHub-Konto verbinden:**
+`Settings` → `Version Control` → `GitHub` → **+** → mit GitHub anmelden.
+
+**Remote hinzufügen:**
+`Git` → `Manage Remotes…` → URL des Repositorys eintragen (entspricht `git remote add origin <URL>`).
+
+**Pushen und Pullen:**
+- Push: `Ctrl + Shift + K` (macOS: `Cmd + Shift + K`) bzw. im Commit-Fenster **Commit and Push**
+- Pull/Update: `Ctrl + T` (macOS: `Cmd + T`) → **Update Project**
+
+**Projekt direkt auf GitHub veröffentlichen:**
+`Git` → `GitHub` → `Share Project on GitHub`
+
 ---
 
 ## 5. Nützliche Git-Tools und Plattformen
