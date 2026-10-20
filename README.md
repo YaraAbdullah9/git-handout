@@ -179,7 +179,52 @@ Falls man den Merge abbrechen möchte: `git merge --abort`
 
 ## 4. Git mit IntelliJ/PyCharm
 
-_Dieser Abschnitt wird noch ergänzt._
+IntelliJ IDEA und PyCharm (beide von JetBrains) haben eine eingebaute Git-Integration. Die meisten Befehle lassen sich per Mausklick ausführen. *(Menünamen können je nach Version und „New UI“/„Classic UI“ leicht abweichen.)*
+
+### Lokales Repository
+
+**Neues Repository anlegen:**
+`VCS` → `Create Git Repository…` (bzw. `Enable Version Control Integration`) → Projektordner auswählen. Das entspricht `git init`.
+
+**Änderungen committen:**
+- Commit-Fenster öffnen: `Ctrl + K` (macOS: `Cmd + K`)
+- Dateien auswählen (entspricht `git add`), Commit-Message eingeben, auf **Commit** klicken.
+- Geänderte Dateien werden farbig markiert: **blau** = geändert, **grün** = neu, **rot** = nicht versioniert.
+
+**Historie ansehen:**
+Git-Tool-Window öffnen: `Alt + 9` (macOS: `Cmd + 9`) → Reiter **Log**. Hier sieht man alle Commits und Branches grafisch.
+
+**Branches:**
+Über das Branch-Widget (New UI: oben links neben dem Projektnamen, Classic UI: unten rechts in der Statusleiste) → `New Branch…`, Branch wechseln (`Checkout`) oder mergen (`Merge into Current`).
+
+### Remote Repository
+
+**Bestehendes Repository klonen:**
+`File` → `New` → `Project from Version Control…` (oder auf dem Startbildschirm **Get from VCS**) → URL einfügen → **Clone**.
+
+**GitHub-Konto verbinden:**
+`Settings` → `Version Control` → `GitHub` → **+** → mit GitHub anmelden.
+
+**Remote hinzufügen:**
+`Git` → `Manage Remotes…` → URL des Repositorys eintragen (entspricht `git remote add origin <URL>`).
+
+**Pushen und Pullen:**
+- Push: `Ctrl + Shift + K` (macOS: `Cmd + Shift + K`) bzw. im Commit-Fenster **Commit and Push**
+- Pull/Update: `Ctrl + T` (macOS: `Cmd + T`) → **Update Project**
+
+**Projekt direkt auf GitHub veröffentlichen:**
+`Git` → `GitHub` → `Share Project on GitHub`
+
+### Merge-Konflikte in der IDE
+
+Bei einem Konflikt öffnet die IDE einen Dialog mit den betroffenen Dateien. Optionen:
+- **Accept Yours:** eigene Version übernehmen
+- **Accept Theirs:** fremde Version übernehmen
+- **Merge…:** dreigeteilte Ansicht (links eigene Version, rechts fremde Version, Mitte Ergebnis), in der man Änderungen einzeln per Pfeil übernehmen kann
+
+### Pull Requests in der IDE
+
+Mit verbundenem GitHub-Konto gibt es das Tool-Window **Pull Requests**, in dem man PRs erstellen, ansehen, kommentieren und reviewen kann, ohne den Browser zu öffnen.
 
 ---
 
