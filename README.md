@@ -113,7 +113,26 @@ __pycache__/
 
 ## 3. Branches und Merge-Konflikte
 
-_Dieser Abschnitt wird noch ergänzt._
+### Was sind Branches?
+
+Ein Branch ist eine eigene Entwicklungslinie. Der Haupt-Branch heißt meist `main` (früher `master`). Neue Features oder Änderungen entwickelt man in einem separaten Branch und führt sie erst nach Fertigstellung und Review in `main` zusammen. So bleibt `main` stabil.
+
+```
+main:        A───B───────────E (Merge)
+                  \         /
+feature/x:         C───D───
+```
+
+### Wichtige Branch-Befehle
+
+| Befehl | Beschreibung |
+|---|---|
+| `git branch` | Alle lokalen Branches anzeigen (`-a` inklusive Remote) |
+| `git switch -c feature/x` | Neuen Branch anlegen und wechseln (älter: `git checkout -b`) |
+| `git switch main` | Zu einem Branch wechseln |
+| `git merge feature/x` | Branch `feature/x` in den aktuellen Branch übernehmen |
+| `git push -u origin feature/x` | Branch erstmals hochladen und mit Remote verknüpfen |
+| `git branch -d feature/x` | Branch nach dem Merge löschen |
 
 ---
 
