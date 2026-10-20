@@ -1,0 +1,29 @@
+# JetBrains IDEs (IntelliJ, PyCharm)
+.idea/
+*.iml
+out/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.env
+
+# Java / Build
+*.class
+target/
+build/
+.gradle/
+
+# Node
+node_modules/
+
+# Logs und temporäre Dateien
+*.log
+*.tmp
+
+# Betriebssysteme
+.DS_Store
+Thumbs.db
