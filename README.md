@@ -30,6 +30,25 @@ Git ist ein **verteiltes Versionskontrollsystem**. Es speichert den Verlauf alle
 | **Merge** | Zusammenführen von zwei Branches |
 | **Pull Request (PR)** / **Merge Request (MR)** | Anfrage auf einer Plattform, Änderungen eines Branches in einen anderen zu übernehmen, inklusive Review |
 
+### Die drei Bereiche von Git
+
+```
+ Working Directory  ──git add──▶  Staging Area  ──git commit──▶  Lokales Repository  ──git push──▶  Remote (GitHub)
+   (Dateien, an                   (vorgemerkte                    (gespeicherte                     (gemeinsames
+    denen man arbeitet)            Änderungen)                     Commits)                          Repository)
+                       ◀──────────────────────────── git pull ─────────────────────────────────────
+```
+
+### Warum Git?
+
+- **Nachvollziehbarkeit:** Jede Änderung ist dokumentiert und kann rückgängig gemacht werden.
+- **Zusammenarbeit:** Mehrere Personen können gleichzeitig am selben Projekt arbeiten, ohne sich gegenseitig Dateien zu überschreiben.
+- **Paralleles Arbeiten:** Mit Branches lassen sich Features, Bugfixes und Experimente getrennt entwickeln.
+- **Sicherheit:** Durch Remote-Repositorys gibt es automatisch eine Sicherungskopie.
+- **Industriestandard:** Git wird in nahezu allen Softwareprojekten eingesetzt.
+
+> **Git ≠ GitHub:** Git ist das Programm zur Versionskontrolle auf dem eigenen Rechner. GitHub (oder GitLab, Bitbucket) ist eine Plattform, auf der Git-Repositorys gehostet und gemeinsam bearbeitet werden.
+
 ---
 
 ## 2. Grundlegende Git-Befehle
