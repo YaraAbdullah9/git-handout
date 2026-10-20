@@ -19,6 +19,17 @@ Git ist ein **verteiltes Versionskontrollsystem**. Es speichert den Verlauf alle
 
 „Verteilt“ bedeutet: Jede Person hat eine vollständige Kopie des Repositorys inklusive der gesamten Historie auf ihrem Rechner. Man kann also auch offline arbeiten und committen.
 
+### Wichtige Begriffe
+
+| Begriff | Bedeutung |
+|---|---|
+| **Repository (Repo)** | Projektordner, dessen Änderungen von Git verwaltet werden (enthält den versteckten Ordner `.git`) |
+| **Commit** | Gespeicherter „Schnappschuss“ des Projekts mit Beschreibung, Autor:in und Zeitstempel |
+| **Branch** | Unabhängige Entwicklungslinie, z. B. für ein neues Feature |
+| **Remote** | Entferntes Repository, z. B. auf GitHub (Standardname: `origin`) |
+| **Merge** | Zusammenführen von zwei Branches |
+| **Pull Request (PR)** / **Merge Request (MR)** | Anfrage auf einer Plattform, Änderungen eines Branches in einen anderen zu übernehmen, inklusive Review |
+
 ---
 
 ## 2. Grundlegende Git-Befehle
