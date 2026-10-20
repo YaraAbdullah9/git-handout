@@ -53,7 +53,61 @@ Git ist ein **verteiltes Versionskontrollsystem**. Es speichert den Verlauf alle
 
 ## 2. Grundlegende Git-Befehle
 
-_Dieser Abschnitt wird noch ergänzt._
+### Einmalige Einrichtung
+
+```bash
+git config --global user.name "Vorname Nachname"
+git config --global user.email "name@example.com"
+git config --global init.defaultBranch main
+git config --list          # Einstellungen prüfen
+```
+
+### Die wichtigsten Befehle
+
+| Befehl | Beschreibung |
+|---|---|
+| `git init` | Neues Repository im aktuellen Ordner anlegen |
+| `git clone <URL>` | Bestehendes Remote-Repository herunterladen |
+| `git status` | Zeigt geänderte, vorgemerkte und neue Dateien |
+| `git add <datei>` | Datei für den nächsten Commit vormerken (`git add .` = alle Änderungen) |
+| `git commit -m "Nachricht"` | Vorgemerkte Änderungen als Commit speichern |
+| `git log --oneline` | Kompakte Übersicht der Commit-Historie |
+| `git diff` | Zeigt noch nicht vorgemerkte Änderungen |
+| `git push` | Lokale Commits ins Remote-Repository hochladen |
+| `git pull` | Änderungen vom Remote holen und einarbeiten (= `fetch` + `merge`) |
+| `git fetch` | Änderungen vom Remote holen, ohne sie einzuarbeiten |
+| `git restore <datei>` | Ungespeicherte Änderungen an einer Datei verwerfen |
+| `git restore --staged <datei>` | Datei aus der Staging Area entfernen (Änderung bleibt erhalten) |
+| `git revert <commit>` | Neuen Commit erstellen, der einen alten Commit rückgängig macht |
+
+### Typischer Ablauf
+
+```bash
+git clone https://github.com/team/git-handout.git
+cd git-handout
+# ... Dateien bearbeiten ...
+git status
+git add README.md
+git commit -m "Abschnitt zu Git-Grundbefehlen ergänzt"
+git push
+```
+
+### Tipps für gute Commit-Messages
+
+- Kurz und aussagekräftig (ca. 50 Zeichen), im Imperativ oder als Beschreibung: `Tabelle mit Grundbefehlen ergänzt`
+- Ein Commit = eine logische Änderung
+- Nicht: `update`, `fix`, `asdf`
+
+### Die Datei `.gitignore`
+
+In der `.gitignore` steht, welche Dateien Git ignorieren soll, z. B. IDE-Einstellungen (`.idea/`), Build-Ordner (`target/`, `build/`), virtuelle Umgebungen (`.venv/`) oder Passwörter/Konfigurationsdateien (`.env`).
+
+```gitignore
+.idea/
+__pycache__/
+.venv/
+.env
+```
 
 ---
 
