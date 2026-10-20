@@ -264,4 +264,13 @@ Mit verbundenem GitHub-Konto gibt es das Tool-Window **Pull Requests**, in dem m
 
 ## 6. Entstehung und Beiträge
 
-_Dieser Abschnitt wird noch ergänzt._
+Dieses Handout wurde von **Yara Abdullah** in Einzelarbeit erstellt. Um den Team-Workflow trotzdem praktisch anzuwenden, wurde jeder Abschnitt in einem eigenen Branch mit mehreren Commits geschrieben und über einen Pull Request mit Self-Review in `main` übernommen.
+
+| Abschnitt | Branch | Beitrag |
+|---|---|---|
+| Struktur | `docs/struktur` | Gliederung und Inhaltsverzeichnis festgelegt |
+| 1. Was ist Git? | `feature/einleitung` | Einleitung, Begriffe und Grafik zu den drei Bereichen |
+| 2. Grundbefehle | `feature/grundbefehle` | Einrichtung, Befehlstabelle, Beispielablauf, `.gitignore` |
+| 3. Branches & Konflikte | `feature/branches` | Branch-Befehle, Konventionen, Lösen von Merge-Konflikten |
+| 4. IntelliJ/PyCharm | `feature/ide` | Lokales und Remote Repository in der IDE |
+| 5. Tools & Plattformen | `feature/tools` | Plattformen, Pull Requests, Clients und Lernressourcen |
