@@ -252,6 +252,14 @@ Mit verbundenem GitHub-Konto gibt es das Tool-Window **Pull Requests**, in dem m
 - **GitKraken:** sehr anschauliche Visualisierung (für Studierende teils kostenlos)
 - **VS Code:** eingebaute Git-Unterstützung, erweiterbar mit „GitLens“
 
+### Weitere hilfreiche Werkzeuge
+
+- **GitHub CLI (`gh`):** PRs und Issues direkt im Terminal verwalten, z. B. `gh pr create`
+- **gitignore-Vorlagen:** [github.com/github/gitignore](https://github.com/github/gitignore)
+- **Learn Git Branching:** interaktives Lernspiel unter [learngitbranching.js.org](https://learngitbranching.js.org)
+- **Pro Git (Buch, kostenlos, auch auf Deutsch):** [git-scm.com/book/de](https://git-scm.com/book/de/v2)
+- **Offizielle Dokumentation:** [git-scm.com/docs](https://git-scm.com/docs)
+
 ---
 
 ## 6. Entstehung und Beiträge
