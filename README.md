@@ -230,7 +230,35 @@ Mit verbundenem GitHub-Konto gibt es das Tool-Window **Pull Requests**, in dem m
 
 ## 5. Nützliche Git-Tools und Plattformen
 
-_Dieser Abschnitt wird noch ergänzt._
+### Hosting-Plattformen
+
+| Plattform | Besonderheiten |
+|---|---|
+| **GitHub** | Größte Plattform, Pull Requests, Issues, GitHub Actions (CI/CD), GitHub Pages, kostenloses Student Developer Pack |
+| **GitLab** | Merge Requests, starke integrierte CI/CD-Pipelines, auch selbst hostbar |
+| **Bitbucket** | Gute Integration mit Jira und anderen Atlassian-Tools |
+
+### Pull Requests auf GitHub
+
+1. Branch pushen → GitHub zeigt **Compare & pull request** an.
+2. Base-Branch (`main`) und Compare-Branch (`feature/x`) prüfen, Titel und Beschreibung schreiben, Reviewer:innen auswählen.
+3. Reviewer:innen prüfen unter **Files changed** die Änderungen, kommentieren einzelne Zeilen und wählen unter **Review changes** → *Comment*, *Approve* oder *Request changes*.
+4. Nach der Freigabe: **Merge pull request** → Branch löschen.
+
+### Grafische Git-Clients
+
+- **GitHub Desktop:** einfach, ideal für den Einstieg
+- **Sourcetree:** kostenlos, übersichtliche Darstellung der Branches
+- **GitKraken:** sehr anschauliche Visualisierung (für Studierende teils kostenlos)
+- **VS Code:** eingebaute Git-Unterstützung, erweiterbar mit „GitLens“
+
+### Weitere hilfreiche Werkzeuge
+
+- **GitHub CLI (`gh`):** PRs und Issues direkt im Terminal verwalten, z. B. `gh pr create`
+- **gitignore-Vorlagen:** [github.com/github/gitignore](https://github.com/github/gitignore)
+- **Learn Git Branching:** interaktives Lernspiel unter [learngitbranching.js.org](https://learngitbranching.js.org)
+- **Pro Git (Buch, kostenlos, auch auf Deutsch):** [git-scm.com/book/de](https://git-scm.com/book/de/v2)
+- **Offizielle Dokumentation:** [git-scm.com/docs](https://git-scm.com/docs)
 
 ---
 
