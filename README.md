@@ -230,7 +230,13 @@ Mit verbundenem GitHub-Konto gibt es das Tool-Window **Pull Requests**, in dem m
 
 ## 5. Nützliche Git-Tools und Plattformen
 
-_Dieser Abschnitt wird noch ergänzt._
+### Hosting-Plattformen
+
+| Plattform | Besonderheiten |
+|---|---|
+| **GitHub** | Größte Plattform, Pull Requests, Issues, GitHub Actions (CI/CD), GitHub Pages, kostenloses Student Developer Pack |
+| **GitLab** | Merge Requests, starke integrierte CI/CD-Pipelines, auch selbst hostbar |
+| **Bitbucket** | Gute Integration mit Jira und anderen Atlassian-Tools |
 
 ---
 
